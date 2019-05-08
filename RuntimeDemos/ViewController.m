@@ -25,6 +25,7 @@
     // Do any additional setup after loading the view.
 //    [self messageForwardTest];
     [self getListTest];
+    NSLog(@"runtime");
 }
 
 #pragma -1 消息转发
