@@ -26,6 +26,8 @@
 //    [self messageForwardTest];
     [self getListTest];
     NSLog(@"runtime");
+    NSLog(@"runtime2");
+
 }
 
 #pragma -1 消息转发
