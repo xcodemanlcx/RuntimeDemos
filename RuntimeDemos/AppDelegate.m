@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import <objc/runtime.h>
+#import "TableViewController.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +19,14 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    TableViewController *tableViewController = [[TableViewController alloc] init];
+    tableViewController.exampleControllerNames = @[@"RTQueryVC",@"RTAddPropertyVC",@"RTMethodSwizzlingVC",@"MessageForwardVC",@"DictionaryToModelVC",@"MessageVC",@"ArchiverAndUnarchiverVC"];
+    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:tableViewController];
+    navigationController.navigationBar.translucent = NO;
+    self.window.rootViewController = navigationController;
+    [self.window makeKeyAndVisible];
+    
     return YES;
 }
 

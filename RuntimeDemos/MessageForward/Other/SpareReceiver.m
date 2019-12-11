@@ -9,11 +9,12 @@
 #import "SpareReceiver.h"
 
 @implementation SpareReceiver
+
 -(void)instanceFunction{
-    NSLog(@"备用类，instanceFunction");
+    NSLog(@"2 instance备用接收者");
 }
 
 +(void)classFunction{
-    NSLog(@"备用类，classFunction");
+    NSLog(@"2 class备用接收者");
 }
 @end

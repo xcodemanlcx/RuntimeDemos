@@ -13,7 +13,7 @@
 
 + (instancetype)modelWithDic:(NSDictionary *)dic{
     id model = [[self alloc] init];
-    // 遍历模型中属性
+    // 遍历模型中成员变量
     unsigned int count = 0;
     Ivar *ivars = class_copyIvarList(self, &count);
     for (int i = 0 ; i < count; i++) {
@@ -22,8 +22,10 @@
         NSString *ivarKey = [NSString stringWithUTF8String:ivar_getName(ivar)];
         ivarKey = [ivarKey substringFromIndex:1];
         id value = dic[ivarKey];
-        //赋值
-        [model setValue:value forKeyPath:ivarKey];
+        if (value) {
+            //赋值
+            [model setValue:value forKeyPath:ivarKey];
+        }
     }
     return model;
 }

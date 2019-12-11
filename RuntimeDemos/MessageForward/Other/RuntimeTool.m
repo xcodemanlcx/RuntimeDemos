@@ -14,8 +14,7 @@
 
 //获取元类
 +(Class)getMetaClassWithClass:(Class)class{
-    const  char * classChar = [NSStringFromClass(class) UTF8String];
-    return objc_getMetaClass(classChar);
+    return objc_getMetaClass(class_getName(class));
 }
 
 //添加对象方法
@@ -23,7 +22,6 @@
     Method method = class_getInstanceMethod(class, impSel);
     IMP methodIMP = method_getImplementation(method);
     const char * types = method_getTypeEncoding(method);
-   
     class_addMethod(class, sel, methodIMP, types);
 }
 @end

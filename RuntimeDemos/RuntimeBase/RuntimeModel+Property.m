@@ -9,10 +9,8 @@
 #import "RuntimeModel+Property.h"
 #import <objc/runtime.h>
 
-static const void *RModel_categoryName = "categoryName";
 @implementation RuntimeModel (Property)
 
-//关联setter、getter与属性key，关键字
 - (void)setCategoryName:(NSString *)categoryName{
     objc_setAssociatedObject(self, @selector(categoryName), categoryName, OBJC_ASSOCIATION_COPY_NONATOMIC);
 }

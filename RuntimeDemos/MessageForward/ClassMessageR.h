@@ -1,5 +1,5 @@
 //
-//  MessageRClass.h
+//  ClassMessageR.h
 //  MessageForward
 //
 //  Created by leichunxiang on 2019/4/13.
@@ -8,11 +8,11 @@
 
 #import <Foundation/Foundation.h>
 
-#define classFun @"classFunction"
+#define kClassFun @"classFunction"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface MessageRClass : NSObject
+@interface ClassMessageR : NSObject
 
 @end
 

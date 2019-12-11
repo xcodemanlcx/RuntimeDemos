@@ -11,9 +11,8 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface SpareReceiver : NSObject
--(void)instanceFunction;
 
-+(void)classFunction;
+
 @end
 
 NS_ASSUME_NONNULL_END

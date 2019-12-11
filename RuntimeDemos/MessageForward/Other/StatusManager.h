@@ -1,8 +1,8 @@
 //
-//  NSObject+Model.h
+//  StatusManager.h
 //  RuntimeDemos
 //
-//  Created by leichunxiang on 2019/4/17.
+//  Created by lcx on 2019/12/11.
 //  Copyright © 2019 lcx. All rights reserved.
 //
 
@@ -10,9 +10,11 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface NSObject (Model)
+@interface StatusManager : NSObject
 
-+ (instancetype)modelWithDic:(NSDictionary *)dic;
++ (instancetype)shareInstance;
+
+@property (nonatomic ) int status;
 
 @end
 

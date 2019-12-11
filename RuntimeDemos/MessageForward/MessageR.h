@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-#define instanceFun @"instanceFunction"
+#define kInstanceFun @"instanceFunction"
 
 NS_ASSUME_NONNULL_BEGIN
 

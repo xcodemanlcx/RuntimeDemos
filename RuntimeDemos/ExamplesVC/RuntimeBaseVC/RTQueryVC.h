@@ -1,16 +1,16 @@
 //
-//  NSString+Model.h
+//  RTQueryVC.h
 //  RuntimeDemos
 //
-//  Created by leichunxiang on 2019/4/17.
+//  Created by lcx on 2019/12/10.
 //  Copyright © 2019 lcx. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import "BaseViewController.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface NSString (Model)
+@interface RTQueryVC : BaseViewController
 
 @end
 

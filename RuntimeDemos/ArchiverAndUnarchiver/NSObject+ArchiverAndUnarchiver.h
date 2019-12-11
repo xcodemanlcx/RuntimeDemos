@@ -1,8 +1,8 @@
 //
-//  NSObject+Model.h
+//  NSObject+ArchiverAndUnarchiver.h
 //  RuntimeDemos
 //
-//  Created by leichunxiang on 2019/4/17.
+//  Created by lcx on 2019/12/11.
 //  Copyright © 2019 lcx. All rights reserved.
 //
 
@@ -10,9 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface NSObject (Model)
-
-+ (instancetype)modelWithDic:(NSDictionary *)dic;
+@interface NSObject (ArchiverAndUnarchiver)
 
 @end
 
