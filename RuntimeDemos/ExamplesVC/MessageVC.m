@@ -7,7 +7,23 @@
 //
 
 #import "MessageVC.h"
+#import <objc/message.h>
+
 //参考：https://www.jianshu.com/p/fe131f8757ba
+
+@interface MessageModel :NSObject
+
+- (void)setAge:(int )age;
+
+@end
+
+@implementation MessageModel
+
+- (void)setAge:(int )age{
+    NSLog(@"%@ : age = %d",self,age);
+}
+
+@end
 
 @interface MessageVC ()
 
@@ -18,17 +34,20 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+
+    //1 消息发送
+    ((void (*)(id, SEL, int))objc_msgSend)(MessageModel.new, @selector(setAge:), 100);
     
-    //利用消息机制，提高某一方法频繁调用的效率
-    void (*setter)(id, SEL, int);
-    setter = (void (*)(id, SEL, int))[self methodForSelector:@selector(setAge:)];
-    for (int i = 0 ; i < 100 ; i++ )
-        setter(self, @selector(setAge:), i);
+    //2 缓存IMP，提高某一方法频繁调用效率
+    MessageModel *messageModel = MessageModel.new;
+    IMP nameIMP = class_getMethodImplementation(object_getClass(messageModel), @selector(setAge:));
+    void (*setter)(id, SEL, int) = (void *)nameIMP;
+    for (int i = 0; i < 10; i++) {
+        setter(messageModel,@selector(setAge:),i);
+    }
+
 }
 
-- (void)setAge:(int)age{
-    NSLog(@"setAge = %d",age);
-}
 /*
 #pragma mark - Navigation
 
@@ -40,3 +59,6 @@
 */
 
 @end
+
+
+

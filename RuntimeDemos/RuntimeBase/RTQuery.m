@@ -86,6 +86,8 @@
         _method = method;
         _name = NSStringFromSelector(method_getName(method));
         _type =[NSString stringWithUTF8String:method_getTypeEncoding(method)];
+        _sel = method_getName(method);
+        _imp = method_getImplementation(method);
     }
     return self;
 }

@@ -21,7 +21,7 @@
     // Override point for customization after application launch.
     
     TableViewController *tableViewController = [[TableViewController alloc] init];
-    tableViewController.exampleControllerNames = @[@"RTQueryVC",@"RTAddPropertyVC",@"RTMethodSwizzlingVC",@"MessageForwardVC",@"DictionaryToModelVC",@"MessageVC",@"ArchiverAndUnarchiverVC"];
+    tableViewController.exampleControllerNames = @[@"RTQueryVC",@"RTAddPropertyVC",@"RTMethodSwizzlingVC",@"MessageForwardVC",@"DictionaryToModelVC",@"MessageVC",@"ArchiverAndUnarchiverVC",@"KVOVC"];
     UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:tableViewController];
     navigationController.navigationBar.translucent = NO;
     self.window.rootViewController = navigationController;

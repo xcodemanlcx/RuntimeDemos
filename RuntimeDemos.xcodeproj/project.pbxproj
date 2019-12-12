@@ -16,8 +16,9 @@
 		073C0D5E23A0EEE700EE1CD7 /* DictionaryToModelVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 073C0D5D23A0EEE700EE1CD7 /* DictionaryToModelVC.m */; };
 		073C0D6123A0F37900EE1CD7 /* MessageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 073C0D6023A0F37900EE1CD7 /* MessageVC.m */; };
 		073C0D6623A0F9CA00EE1CD7 /* ArchiverModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 073C0D6523A0F9CA00EE1CD7 /* ArchiverModel.m */; };
-		073C0D6923A0FB2300EE1CD7 /* NSObject+ArchiverAndUnarchiver.m in Sources */ = {isa = PBXBuildFile; fileRef = 073C0D6823A0FB2300EE1CD7 /* NSObject+ArchiverAndUnarchiver.m */; };
 		073C0D6F23A0FD6300EE1CD7 /* ArchiverAndUnarchiverVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 073C0D6E23A0FD6300EE1CD7 /* ArchiverAndUnarchiverVC.m */; };
+		0784D9E623A1D4A7002E87EC /* KVOVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0784D9E523A1D4A7002E87EC /* KVOVC.m */; };
+		0784D9E923A1D4CE002E87EC /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 0784D9E823A1D4CE002E87EC /* Person.m */; };
 		079FC10C239F8AB000FDB14C /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 079FC10A239F8AB000FDB14C /* TableViewController.m */; };
 		079FC119239FA0D700FDB14C /* RTQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 079FC118239FA0D700FDB14C /* RTQuery.m */; };
 		079FC122239FAA9A00FDB14C /* NSObject+RTMethodSwizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = 079FC121239FAA9A00FDB14C /* NSObject+RTMethodSwizzling.m */; };
@@ -57,10 +58,12 @@
 		073C0D6023A0F37900EE1CD7 /* MessageVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MessageVC.m; sourceTree = "<group>"; };
 		073C0D6423A0F9CA00EE1CD7 /* ArchiverModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ArchiverModel.h; sourceTree = "<group>"; };
 		073C0D6523A0F9CA00EE1CD7 /* ArchiverModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ArchiverModel.m; sourceTree = "<group>"; };
-		073C0D6723A0FB2300EE1CD7 /* NSObject+ArchiverAndUnarchiver.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+ArchiverAndUnarchiver.h"; sourceTree = "<group>"; };
-		073C0D6823A0FB2300EE1CD7 /* NSObject+ArchiverAndUnarchiver.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+ArchiverAndUnarchiver.m"; sourceTree = "<group>"; };
 		073C0D6D23A0FD6300EE1CD7 /* ArchiverAndUnarchiverVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ArchiverAndUnarchiverVC.h; sourceTree = "<group>"; };
 		073C0D6E23A0FD6300EE1CD7 /* ArchiverAndUnarchiverVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ArchiverAndUnarchiverVC.m; sourceTree = "<group>"; };
+		0784D9E423A1D4A7002E87EC /* KVOVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KVOVC.h; sourceTree = "<group>"; };
+		0784D9E523A1D4A7002E87EC /* KVOVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KVOVC.m; sourceTree = "<group>"; };
+		0784D9E723A1D4CE002E87EC /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		0784D9E823A1D4CE002E87EC /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 		079FC10A239F8AB000FDB14C /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
 		079FC10B239F8AB000FDB14C /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
 		079FC117239FA0D700FDB14C /* RTQuery.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RTQuery.h; sourceTree = "<group>"; };
@@ -138,6 +141,8 @@
 		073C0D6223A0F7A800EE1CD7 /* KVO */ = {
 			isa = PBXGroup;
 			children = (
+				0784D9E723A1D4CE002E87EC /* Person.h */,
+				0784D9E823A1D4CE002E87EC /* Person.m */,
 			);
 			path = KVO;
 			sourceTree = "<group>";
@@ -147,8 +152,6 @@
 			children = (
 				073C0D6423A0F9CA00EE1CD7 /* ArchiverModel.h */,
 				073C0D6523A0F9CA00EE1CD7 /* ArchiverModel.m */,
-				073C0D6723A0FB2300EE1CD7 /* NSObject+ArchiverAndUnarchiver.h */,
-				073C0D6823A0FB2300EE1CD7 /* NSObject+ArchiverAndUnarchiver.m */,
 			);
 			path = ArchiverAndUnarchiver;
 			sourceTree = "<group>";
@@ -179,6 +182,8 @@
 				073C0D6023A0F37900EE1CD7 /* MessageVC.m */,
 				073C0D6D23A0FD6300EE1CD7 /* ArchiverAndUnarchiverVC.h */,
 				073C0D6E23A0FD6300EE1CD7 /* ArchiverAndUnarchiverVC.m */,
+				0784D9E423A1D4A7002E87EC /* KVOVC.h */,
+				0784D9E523A1D4A7002E87EC /* KVOVC.m */,
 			);
 			path = ExamplesVC;
 			sourceTree = "<group>";
@@ -319,12 +324,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				36C2E31F2266B4360022ADE1 /* ViewController.m in Sources */,
-				073C0D6923A0FB2300EE1CD7 /* NSObject+ArchiverAndUnarchiver.m in Sources */,
 				073C0D6123A0F37900EE1CD7 /* MessageVC.m in Sources */,
 				36C2E32A2266B4370022ADE1 /* main.m in Sources */,
 				36C2E31C2266B4360022ADE1 /* AppDelegate.m in Sources */,
 				073C0D5E23A0EEE700EE1CD7 /* DictionaryToModelVC.m in Sources */,
 				079FC122239FAA9A00FDB14C /* NSObject+RTMethodSwizzling.m in Sources */,
+				0784D9E923A1D4CE002E87EC /* Person.m in Sources */,
 				073C0D6F23A0FD6300EE1CD7 /* ArchiverAndUnarchiverVC.m in Sources */,
 				073C0D5823A0E13E00EE1CD7 /* ClassMessageR.m in Sources */,
 				079FC12A239FBABC00FDB14C /* RTQueryVC.m in Sources */,
@@ -342,6 +347,7 @@
 				073C0D3623A08E6300EE1CD7 /* RTMethodSwizzlingVC.m in Sources */,
 				3638C5CD2266C38E007B8F11 /* NSObject+Model.m in Sources */,
 				079FC12D239FBAEC00FDB14C /* BaseViewController.m in Sources */,
+				0784D9E623A1D4A7002E87EC /* KVOVC.m in Sources */,
 				360AAE20226A195300181194 /* RuntimeModel+Property.m in Sources */,
 				073C0D6623A0F9CA00EE1CD7 /* ArchiverModel.m in Sources */,
 			);

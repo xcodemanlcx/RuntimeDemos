@@ -51,6 +51,8 @@
 @property (nonatomic ,assign ,readonly) Method method;
 @property (nonatomic ,copy, readonly) NSString *name;
 @property (nonatomic ,copy, readonly) NSString *type;
+@property (nonatomic, assign, readonly) SEL sel;
+@property (nonatomic, assign, readonly) IMP imp;
 
 @end
 
